@@ -28,13 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnCrearArchivo = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnCrearArchivo
+            // 
+            this.btnCrearArchivo.Location = new System.Drawing.Point(31, 253);
+            this.btnCrearArchivo.Name = "btnCrearArchivo";
+            this.btnCrearArchivo.Size = new System.Drawing.Size(117, 62);
+            this.btnCrearArchivo.TabIndex = 0;
+            this.btnCrearArchivo.Text = "Crear archivo";
+            this.btnCrearArchivo.UseVisualStyleBackColor = true;
+            // 
+            // FrmPrincipal
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(569, 327);
+            this.Controls.Add(this.btnCrearArchivo);
+            this.Name = "FrmPrincipal";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnCrearArchivo;
     }
 }
 

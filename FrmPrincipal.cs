@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.IO;
+
 namespace PryEliasSp1
 {
     public partial class FrmPrincipal : Form
@@ -15,6 +17,21 @@ namespace PryEliasSp1
         public FrmPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void FrmPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCrearArchivo_Click(object sender, EventArgs e)
+        {
+            StreamWriter swCrearArchivo = new StreamWriter("miArchivito", false);
+
+            if(swCrearArchivo != null)
+            {
+                MessageBox.Show("Archivo creado");
+            }
         }
     }
 }
